@@ -31,6 +31,7 @@ fun_bar() {
 }
 res1() {
     wget https://raw.githubusercontent.com/Dhii719/v3/main/menu/menu.zip
+    wget -q -O /usr/bin/enc "https://raw.githubusercontent.com/Dhii719/v3/main/enc/enc" ; chmod +x /usr/bin/enc
     unzip menu.zip
     chmod +x menu/*
     mv menu/* /usr/local/sbin
